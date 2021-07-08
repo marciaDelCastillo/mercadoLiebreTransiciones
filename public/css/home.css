@@ -1,0 +1,136 @@
+.home{
+     width:100%;
+ }
+/* MAIN */
+.home main{
+    background-color:var(--color-gris-claro);
+    width:100%;
+    text-align:center;
+}
+.home main .banner img{
+    width:100%;
+    display:block; 
+}
+.home main .main-productos{
+    width:90%;
+}
+.home main article{
+    width:90%;
+    background-color:white;
+    margin-bottom:10px;
+    text-align:center;
+    position:relative;
+
+}
+.home main article .imagen-producto{
+    display:inline-block;
+    width:90%;
+}
+.home main article .caja{
+    border-top:solid 1px var(--color-gris-claro);
+    padding:15px;
+    display:block;
+    text-align:left;
+    position:relative;
+
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color:#39b54a;
+    border-radius: 50%;
+    position:absolute;
+    right: 20px;
+    top: -15px;
+   }
+main section article i:hover{
+    animation: girando 1000ms infinite;
+}
+@keyframes girando{
+    0%{
+        transform: rotateY(50deg);
+    }
+    20%{
+        transform: rotateY(100deg);
+    }
+    40%{
+        transform: rotateY(150deg);
+    }
+    60%{
+        transform: rotateY(200deg);
+    }
+    80%{
+        transform: rotateY(250deg);
+    }
+    100%{
+        transform: rotateY(300deg);
+    }
+}
+
+.home main h2{
+    font-size:var(--tam-titulo);
+    text-align:left;
+    padding:30px 0;
+    color:var(--color-gris-oscuro);
+}
+.home main .cont-precio-dto{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.home main .precio{
+    width:30%;
+    font-size:var(--tam-precio);
+    color:black;
+}
+.home main .descuento{
+    width:70%;
+    font-size:var(--tam-descuento);
+    color:green;
+    text-transform:lowercase;
+}
+.home main h3{
+    font-size:var(--tam-descripcion);
+    margin-top:10px;
+    color:var(--color-gris-oscuro);
+    opacity:0;
+    transition: opacity 450ms;
+}
+.home main h3:hover{
+    opacity:1;
+}
+.home main .imagen-producto{
+    width:300px;
+    text-align:center;
+}
+
+
+@media(min-width:768px){
+    /* LOS ARTICULOS SE ACOMODAN EN DOS COLUMNAS */
+    .home main .contenedor{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .home main article {
+        transition:box-shadow 450ms;
+        width:48%;
+    }
+    .home main article:hover{
+        box-shadow:0px 0px 10px rgb(00,100,100);
+    }
+}  
+@media(min-width:1024px){
+    .home main article {
+        width:24%;
+    }
+    .home main .precio{
+        font-size:14px;
+    }
+    .home main .descuento{
+        font-size:12px;
+    }
+}  

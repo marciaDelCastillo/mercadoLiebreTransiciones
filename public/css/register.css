@@ -1,0 +1,63 @@
+.register{
+    width:100%;
+}
+.register main{
+    width:90%;
+    background-color:var(--color-gris-claro);
+    padding-bottom:20px;
+}
+.register main h1{
+    text-align:center;
+    font-size:30px;
+    padding-top:20px;
+    margin-bottom:15px;
+    color:var(--color-gris-oscuro);
+}
+.register main .dato, .register main label{
+    display:inline-block;
+    width:90%;
+    margin:10px 10%;
+    margin:10px 5%; 
+    font-size:20px;
+    color:var(--color-gris-oscuro);
+}
+.register main .dato{
+    border:1px solid var(--color-gris-oscuro);
+    border-radius:12px;
+    padding:10px 10px;
+}
+.register main .botones{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:15px;
+    margin-top:15px;
+}
+.register main button{
+    font-size:28px;
+    padding:10px;
+    border:1px solid white;
+    border-radius:12px;
+    color:var(--color-gris-claro);
+    background-color:var(--color-gris-oscuro);
+}
+.register main .contenedor-perfil{
+    display:flex;
+    justify-content:space-around;
+}
+.register main .titulo{
+    font-weight:bold;
+    font-size:22px;
+}
+@media(min-width:768px){
+    .register main .preferencias{
+        display:flex;
+        width:100%;
+        justify-content:space-between;
+    }
+    .register main .contenedor-perfil,
+    .register main .intereses{
+        border:1px solid var(--color-gris-oscuro);
+        border-radius:12px;
+        padding:10px;
+    }
+}
